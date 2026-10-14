@@ -356,14 +356,12 @@ def display_menu():
 
 if __name__ == "__main__":
     # List of folders that must be excluded by any sync process. Absolute path required!
-    exclude_int_folder = ['/home/nikk/Downloads/testing/folder1B/Day1/Day2']
-    exclude_ext_folder = ['/home/nikk/Downloads/testing/folder2b/Day2']
+    exclude_int_folder = ['.SynologyWorkingDirectory']
+    exclude_ext_folder = []
 
     # Default source and target folder paths.
-    default_int_folder = '/home/nikk/Downloads/testing/folder1B' # Linux format
-    default_ext_folder = '/home/nikk/Downloads/testing/folder2b' # Linux format
-    #default_int_folder = r"D:\MyExternalDisk" # Windows format
-    #default_ext_folder = r"E:\Data" # Windows format
+    default_int_folder = '/home/nikk/Data/PhotoLanding'
+    default_ext_folder = '/media/nikk/WDElements/PhotoLanding'
 
     # Ask user for folder paths. If none is set, we use the default ones.
     print("\n")
